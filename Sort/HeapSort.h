@@ -1,4 +1,4 @@
-/*ShellSort Algorithm*/
+/*HeapSort Algorithm*/
 /*Author: Loapui*/
 /*2015.11.8*/
 
