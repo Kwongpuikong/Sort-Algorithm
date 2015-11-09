@@ -100,6 +100,26 @@ void MergeSort(int L[], int length){
 	}
 }
 
+void MergeSort2(int L[], int T[], int start, int end){
+
+	/*
+	递归实现的逻辑需要理清楚
+	*/
+	if (start == end){
+	
+		T[start] = L[start];
+		
+	}
+	else{
+	
+		int m = (start + end) / 2;
+		int T2[MAXSIZE];
+		MergeSort2(L, T2, start, m);
+		MergeSort2(L, T2, m + 1, end);
+		Merge(T2, T, start, m, end);
+	}
+}
+
 void MergeSort_print(int L[], int length){
 
 	for (int i = 1; i <= length; i++){

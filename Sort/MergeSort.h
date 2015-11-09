@@ -11,6 +11,7 @@
 void Merge(int S[], int T[], int s1_start, int s1_end, int s2_end);
 void MergeNeighbour(int S[], int T[], int s_len, int length);
 void MergeSort(int L[], int length);
+void MergeSort2(int L[],int T[], int start, int end);
 
 void MergeSort_print(int L[], int length);
 
